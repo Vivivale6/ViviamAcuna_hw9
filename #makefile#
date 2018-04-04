@@ -1,0 +1,6 @@
+cpp_vs_python.png:times_python.csv times_cpp
+	python ViviamAcuna_Graficas.py
+times_python.csv :
+	python ViviamAcuna_GenerarTiempos.py
+times_cpp: ViviamAcuna_GenerarTiempos
+	./a.out > times_cpp
